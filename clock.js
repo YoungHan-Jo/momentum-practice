@@ -1,6 +1,6 @@
-const clockForm = document.querySelector(".js-clock");
-const clock_HM = clockForm.querySelector("h1");
-const clock_S = clockForm.querySelector("h3");
+const clockForm = document.querySelector(".js-clock"),
+  clock_HMin = clockForm.querySelector("span:first-child"),
+  clock_Sec = clockForm.querySelector("span:last-child");
 
 function getTime() {
   const date = new Date();
@@ -8,15 +8,14 @@ function getTime() {
   const minutes = date.getMinutes();
   const seconds = date.getSeconds();
 
-  clock_HM.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${
+  clock_HMin.innerHTML = `${hours < 10 ? `0${hours}` : hours}:${
     minutes < 10 ? `0${minutes}` : minutes
   }`;
-  clock_S.innerHTML = `${seconds < 10 ? `0${seconds}` : seconds}`;
+  clock_Sec.innerHTML = `.${seconds < 10 ? `0${seconds}` : seconds}`;
 }
 
 function init() {
   getTime();
   setInterval(getTime, 1000);
 }
-
 init();

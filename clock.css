@@ -1,0 +1,15 @@
+.clock {
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  padding: 20px;
+  text-align: center;
+}
+
+.clock__time {
+  font-size: 70px;
+}
+
+.clock__sec {
+  font-size: 50px;
+}
