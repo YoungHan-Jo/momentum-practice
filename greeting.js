@@ -1,5 +1,5 @@
 const greetingForm = document.querySelector(".js-greetingForm"),
-  input = greetingForm.querySelector("input"),
+  greetingInput = greetingForm.querySelector("input"),
   greeting = document.querySelector(".js-greeting");
 
 const USER_LS = "currentUser",
@@ -11,7 +11,7 @@ function saveName(text) {
 
 function handleSubmit(event) {
   event.preventDefault();
-  const currentValue = input.value;
+  const currentValue = greetingInput.value;
   paintGreeting(currentValue);
   saveName(currentValue);
 }
