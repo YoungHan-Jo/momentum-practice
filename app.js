@@ -1,14 +1,7 @@
-const daysOfWeek = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const age = parseInt(prompt("How old are you?"));
 
-console.log(daysOfWeek);
-
-daysOfWeek.push("holiday");
-
-console.log(daysOfWeek);
-
-function sayHello(name) {
-  console.log("Hello my name is " + name);
+if (isNaN(age)) {
+  console.log("please write a number");
+} else {
+  console.log(age >= 19 ? "you can drink" : "you can not drink");
 }
-
-sayHello("Nico");
-sayHello("Jo");
