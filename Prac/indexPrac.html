@@ -8,30 +8,24 @@
     <title>Document</title>
   </head>
   <body>
+    <h1 id="clock">00:00.00</h1>
     <form id="login-form" class="hidden">
-      <input
-        type="text"
-        placeholder="What is Your Name"
-        required
-        maxlength="15"
-      />
+      <input type="text" placeholder="What is your name?" required />
       <input type="submit" value="Log In" />
     </form>
-    <h2 id="clock">00:00.00</h2>
-    <h1 class="greeting hidden"></h1>
-    <form action="" id="toDo-form">
-      <input type="text" placeholder="Write a To Do and Press enter" required />
+    <h2 id="greeting" class="hidden"></h2>
+    <form id="toDo-form">
+      <input type="text" placeholder="Write a To Do and press Enter" />
     </form>
     <ul id="toDo-list"></ul>
-    <div id="quotes">
+    <div id="quote">
       <span></span><br />
       <span></span>
     </div>
-
-    <script src="clockPrac.js"></script>
     <script src="greeting.js"></script>
-    <script src="quotesPrac.js"></script>
-    <script src="backgroundPrac.js"></script>
-    <script src="todoPrac.js"></script>
+    <script src="clock.js"></script>
+    <script src="quote.js"></script>
+    <script src="background.js"></script>
+    <script src="toDo.js"></script>
   </body>
 </html>
